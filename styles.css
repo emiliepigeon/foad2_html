@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(97, 163, 165); */
+    /* Dégradé fond */
+    background: rgb(2,0,36);
+    background: linear-gradient(149deg, rgba(2,0,36,1) 0%, rgba(166,204,198,1) 48%, rgba(9,52,61,1) 100%);
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    color: #fff;
+    text-align: center;
+}
+/* Fond hachures */
+/* .demo {
+    background: linear-gradient(45deg, #388372 1%, #fff 1%, #fff 49%, #388372 49%, #388372 51%, #fff 51%, #fff 99%, #388372 99%);
+    background-size: 6px 6px;
+    background-position: 50px 50px;
+} */
+h2, h3 {
+    border-bottom: 1px solid #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p {
+    color: cadetblue;
+}
+section {
+    max-width: 1000px;
+    margin: 25px;
+    padding: 50px;
+    background-color: #fff !important;
+    border-radius: 25px;
+    box-shadow: 25px 25px 2px 1px  rgb(97, 163, 165);
+}
+/* Styles pour l'exercice 1 */
+#exo1.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 45px;
+    border: 2px solid green;
+    padding: 0px;
+}
+#exo1 .col1, #exo1 .col2, #exo1 .col3 {
+    flex: 1;
+    max-width: 150px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0px;
+}
+#exo1 li {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    border: 2px solid red;
+}
+/* Styles pour l'exercice 2 */
+#exo2.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid green;
+    /* padding: 10px; */
+}
+#exo2 .line1, #exo2 .line2, #exo2 .line3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+}
+#exo2 .line1 {
+    justify-content: flex-start;
+}
+#exo2 .line2 {
+    justify-content: space-between;
+}
+
+#exo2 .line3 {
+    justify-content: flex-end;
+}
+#exo2 li {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    /* margin: 0 5px; */
+}
