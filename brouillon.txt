@@ -1,0 +1,15 @@
+/* -------------------------- EXO 2/B -------------------------- */
+
+
+/* Alignement spécifique pour chaque ligne */
+#exo2 .line1 {
+    justify-content: start; /* Aligne les éléments à gauche */
+}
+
+#exo2 .line2 {
+    justify-content: space-around; /* Répartit les éléments avec un espace autour */
+}
+
+#exo2 .line3 {
+    justify-content: end; /* Aligne les éléments à droite */
+}
