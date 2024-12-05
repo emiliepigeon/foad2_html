@@ -1,0 +1,223 @@
+* {
+    /* pour enlever les padding et margin par défaut des navigateurs */
+    padding: 0px;
+    margin: 0px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* ------------------- Style général ----------------- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(97, 163, 165); */
+    /* Dégradé fond */
+    background: rgb(116, 121, 121);
+    background: linear-gradient(39deg, rgba(116, 121, 121, 1) 0%, rgba(235, 245, 245, 1) 51%, rgba(125, 122, 122, 1) 100%);
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    color: #fff;
+    text-align: center;
+    /* font-variant-caps: small-caps; */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 25px;
+}
+
+/* Fond hachures */
+/* .demo {
+    background: linear-gradient(45deg, #388372 1%, #fff 1%, #fff 49%, #388372 49%, #388372 51%, #fff 51%, #fff 99%, #388372 99%);
+    background-size: 6px 6px;
+    background-position: 50px 50px;
+} */
+
+h2, h3 {
+    border-bottom: 1px solid #000;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: cadetblue;
+}
+
+.textimportant {
+    color: cadetblue;
+    font-weight: 900;
+}
+
+section {
+    max-width: 1000px;
+    margin: 25px;
+    padding: 50px;
+    background-color: #fff !important;
+    border-radius: 25px;
+    box-shadow: 25px 25px 2px 1px #7d7a7a;
+    margin-bottom: 50px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+.doc {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7d7a7a;
+    height: 25px;
+}
+
+.doc li {
+    margin: 0 10px;
+    /* Ajoute un peu d'espace entre les éléments */
+}
+
+.doc a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+
+.doc a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*  ------------------- Styles pour l'exercice 1  ------------------- */
+/* Conteneur principal */
+#exo1.container {
+    display: flex;                /* Utilise Flexbox pour le layout */
+    justify-content: center;      /* Centre les éléments horizontalement */
+    width: 100%;                  /* Occupe toute la largeur disponible */
+    gap: 45px;                    /* Espace entre les colonnes */
+    border: 2px solid green;      /* Bordure verte autour du conteneur */
+    padding: 0px;                 /* Pas de rembourrage interne */
+}
+
+/* ------------------- Style pour chaque colonne -------------------  */
+#exo1 .line1, #exo1 .line2, #exo1 .line3 {
+    flex: 1;                      /* Répartit l'espace disponible également */
+    max-width: 150px;             /* Largeur maximale de chaque colonne */
+    height: 240px;                /* Hauteur fixe pour chaque colonne */
+    display: flex;                /* Utilise Flexbox pour le layout interne */
+    flex-direction: column;       /* Empile les éléments verticalement */
+    align-items: center;          /* Centre les éléments horizontalement */
+    justify-content: center;      /* Centre les éléments verticalement */
+    padding-bottom: 0px;          /* Pas de rembourrage en bas */
+}
+
+/*  ------------------- Style pour chaque élément de liste  ------------------- */
+#exo1 div {
+    width: 80px;                  /* Largeur fixe pour chaque élément */
+    height: 80px;                 /* Hauteur fixe pour chaque élément */
+    display: flex;                /* Utilise Flexbox pour centrer le contenu */
+    align-items: center;          /* Centre verticalement le contenu */
+    justify-content: center;      /* Centre horizontalement le contenu */
+    margin: -0.5px;               /* Marge négative pour compenser les bordures */
+    margin-bottom: -0.5px;        /* Répétition inutile, peut être supprimée */
+    margin-bottom: 0px;           /* Annule la marge du bas */
+    border: 1px solid red;        /* Bordure rouge autour de chaque élément */
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*  ------------------- Styles pour l'exercice 2  -------------------  */
+/* Conteneur principal */
+#exo2.container {
+    display: flex;                /* Utilise Flexbox pour le layout */
+    flex-direction: column;       /* Empile les éléments verticalement */
+    width: 100%;                  /* Occupe toute la largeur disponible */
+    border: 2px solid green;      /* Bordure verte autour du conteneur */
+}
+
+/* ------------------- Style commun pour toutes les lignes-------------------  */
+#exo2 .line1, #exo2 .line2, #exo2 .line3 {
+    display: flex;                /* Utilise Flexbox pour le layout horizontal */
+    width: 100%;                  /* Occupe toute la largeur du conteneur */
+    justify-content: space-between; /* Répartit l'espace entre les éléments */
+}
+
+/* ------------------- Style spécifique pour la première ligne-------------------  */
+#exo2 .line1 {
+    justify-content: flex-start;  /* Aligne les éléments au début de la ligne */
+}
+
+/* ------------------- Style spécifique pour la deuxième ligne-------------------  */
+#exo2 .line2 {
+    justify-content: space-around; /* Répartit l'espace autour des éléments */
+}
+
+/* ------------------- Style spécifique pour la troisième ligne -------------------  */
+#exo2 .line3 {
+    justify-content: flex-end;    /* Aligne les éléments à la fin de la ligne */
+}
+
+/* Style pour chaque élément de liste */
+#exo2 div {
+    width: 80px;                  /* Largeur fixe pour chaque élément */
+    height: 80px;                 /* Hauteur fixe pour chaque élément */
+    margin: -0.5px;               /* Marge négative pour compenser les bordures */
+    margin-bottom: -0.5px;        /* Répétition de la marge du bas (peut être supprimée) */
+    display: flex;                /* Utilise Flexbox pour centrer le contenu */
+    align-items: center;          /* Centre verticalement le contenu */
+    justify-content: center;      /* Centre horizontalement le contenu */
+    border: 1px solid red;        /* Bordure rouge autour de chaque élément */
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*  ------------------- Styles pour l'exercice 3 -------------------  */
+#exo3.container {
+    display: flex;                /* Utilise Flexbox pour le layout */
+    flex-direction: column;       /* Empile les éléments verticalement */
+    width: 100%;                  /* Occupe toute la largeur disponible */
+    border: 2px solid green;      /* Bordure verte autour du conteneur */
+}
+
+#exo3 .line1, #exo3 .line2, #exo3 .line3 {
+    display: flex;                /* Utilise Flexbox pour le layout horizontal */
+    width: 100%;                  /* Occupe toute la largeur du conteneur */
+    justify-content: space-between; /* Répartit l'espace entre les éléments */
+}
+
+#exo3 div {
+    width: 80px;                  /* Largeur fixe pour chaque élément */
+    height: 80px;                 /* Hauteur fixe pour chaque élément */
+    margin: -0.5px;                /* Marge négative pour compenser les bordures */
+    margin-right: 15px;             /* Marge à droite des <li> */ 
+    margin-bottom: -0.5px;        /* Répétition de la marge du bas (peut être supprimée) */
+    display: flex;                /* Utilise Flexbox pour centrer le contenu */
+    align-items: center;          /* Centre verticalement le contenu */
+    justify-content: center;      /* Centre horizontalement le contenu */
+    border: 1px solid red;        /* Bordure rouge autour de chaque élément */
+}
+
+/* Sélectionne le dernier élément <li> dans .line1 de #exo3 */
+#exo3 .line1 div:last-child {
+    flex-grow: 4;  /* Permet à cet élément de grandir 4 fois plus que les autres */
+    margin-right: 0px !important;  /* Supprime la marge droite, avec priorité élevée */
+}
+
+/* Applique à .line2 dans #exo3 */
+#exo3 .line2 {
+    justify-content: space-around;  /* Distribue l'espace uniformément autour des éléments */
+}
+
+/* Sélectionne le premier élément <li> dans .line3 de #exo3 */
+#exo3 .line3 li:first-child {
+    flex-grow: 4;  /* Permet à cet élément de grandir 4 fois plus que les autres */
+}
+
+/* Sélectionne le dernier élément <li> dans .line3 de #exo3 */
+#exo3 .line3 li:last-child {
+    margin-right: 0px !important;  /* Supprime la marge droite, avec priorité élevée */
+}
