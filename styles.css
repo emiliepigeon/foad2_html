@@ -1,59 +1,53 @@
-/* Style du conteneur principal */
+/* -------------------------- Style du conteneur principal -------------------------- */
 .container {
-    display: grid;
-    width: 600px;
-    height: 245px;
-    border: 2px solid green;
+    display: grid; /* Active Grid pour le conteneur */
+    width: 600px; /* Largeur fixe du conteneur */
+    height: 245px; /* Hauteur fixe du conteneur */
+    border: 2px solid green; /* Bordure verte autour du conteneur */
+    grid-template-rows: repeat(3, 1fr); /* Définit 3 lignes de taille égale */
+    /* Centrage horizontal et vertical */
+    justify-content: center; /* Centre horizontalement les lignes */
+    align-items: center; /* Centre verticalement les éléments dans chaque ligne */
 }
-
-/* Style pour chaque élément individuel */
+/* -------------------------- Style pour chaque élément -------------------------- */
 .elem {
-    width: 80px;
-    height: 80px;
-    border: 1px solid red;
-    display: grid;
-    place-items: center;
-    margin: -0.5px;
+    border: 1px solid red; /* Bordure rouge autour des éléments */
+    width: 80px; /* Largeur fixe des éléments */
+    height: 80px; /* Hauteur fixe des éléments */
+    
+    /* Centrage du contenu à l'intérieur de chaque élément */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Exercice 1 => A */
-#exo1 {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+
+/* -------------------------- EXO 1/A -------------------------- */
+
+/* Style pour chaque ligne */
+.line1, .line2, .line3 {
+    display: grid; /* Chaque ligne devient un conteneur grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de taille égale dans chaque ligne */
+    grid-template-rows: repeat(3, 1fr); /* 3 colonnes de taille égale dans chaque ligne */
+
+    grid-gap: 100px; /* Espace entre les éléments dans chaque ligne */
+    
+    /* Centrage des éléments dans chaque ligne */
+    justify-content: center; /* Centre horizontalement les éléments */
 }
 
-#exo1 .elem1 { grid-row: 1; }
-#exo1 .elem2 { grid-row: 2; }
-#exo1 .elem3 { grid-row: 3; }
+/* -------------------------- EXO 2/B -------------------------- */
 
-/* Exercice 2 => B */
-#exo2 {
-    grid-template-rows: repeat(3, 1fr);
+
+/* Alignement spécifique pour chaque ligne */
+#exo2 .line1 {
+    justify-content: start; /* Aligne les éléments à gauche */
 }
 
-#exo2 .line {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+#exo2 .line2 {
+    justify-content: space-around; /* Répartit les éléments avec un espace autour */
 }
 
-#exo2 .line:nth-child(1) { justify-items: start; }
-#exo2 .line:nth-child(2) { justify-items: center; }
-#exo2 .line:nth-child(3) { justify-items: end; }
-
-/* Exercice 3 => C */
-#exo3 {
-    grid-template-rows: repeat(3, 1fr);
+#exo2 .line3 {
+    justify-content: end; /* Aligne les éléments à droite */
 }
-
-#exo3 .line {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-}
-
-#exo3 .line:nth-child(1) { justify-items: start; }
-#exo3 .line:nth-child(2) { justify-items: center; }
-#exo3 .line:nth-child(3) { justify-items: end; }
-
-#exo3 .line:nth-child(1) .elem:nth-child(3) { grid-column: 3 / -1; }
-#exo3 .line:nth-child(3) .elem:nth-child(1) { grid-column: 1 / 3; }
