@@ -1,9 +1,0 @@
-/* ---------- Conteneur principal pour tous les exercices */
-.container {
-    display: flex;                /* Utilise Flexbox pour le layout */
-    justify-content: center;      /* Centre les éléments horizontalement */
-    width: 100%;                  /* Occupe toute la largeur disponible */
-    gap: 45px;                    /* Espace entre les colonnes */
-    border: 2px solid green;      /* Bordure verte autour du conteneur */
-    padding: 0px;                 /* Pas de rembourrage interne */
-}
