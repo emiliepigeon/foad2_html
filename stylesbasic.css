@@ -1,0 +1,104 @@
+/* ---------------------------- Style du conteneur principal ---------------------------- */
+.container {
+    display: flex; /* Active Flexbox pour le conteneur */
+    width: 600px; /* Largeur fixe du conteneur */
+    height: 245px; /* Hauteur fixe du conteneur */
+    border: 2px solid green; /* Bordure verte autour du conteneur */
+}
+
+/* ---------------------------- Style exercice l => A ---------------------------- */
+
+/* Style pour chaque colonne */
+.column {
+    display: flex; /* Active Flexbox pour les colonnes */
+    flex-direction: column; /* Empile les éléments verticalement dans chaque colonne */
+    justify-content: space-around; /* Répartit l'espace verticalement entre les éléments */
+    flex: 1; /* Permet à chaque colonne de prendre une part égale de l'espace disponible */
+}
+
+/* Style pour chaque élément individuel */
+.elem {
+    width: 80px; /* Largeur fixe pour chaque élément */
+    height: 80px; /* Hauteur fixe pour chaque élément */
+    border: 1px solid red; /* Bordure rouge autour de chaque élément */
+    display: flex; /* Active Flexbox pour centrer le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+    margin: -0.5px;
+}
+
+/* Réorganisation des éléments */
+.container {
+    flex-direction: column; /* Change la direction du conteneur en colonne */
+}
+
+/* Sélectionne tous les enfants directs du conteneur */
+.container > * {
+    display: flex; /* Active Flexbox pour chaque ligne */
+    justify-content: space-around; /* Répartit l'espace horizontalement entre les éléments */
+}
+
+/* Modifie la direction des colonnes pour les afficher en ligne */
+.column {
+    flex-direction: row; /* Aligne les éléments horizontalement */
+}
+
+/* Définit l'ordre d'affichage pour chaque groupe d'éléments */
+.elem1 { order: 1; } /* Affiche en premier dans chaque ligne */
+.elem2 { order: 2; } /* Affiche en deuxième dans chaque ligne */
+.elem3 { order: 3; } /* Affiche en troisième dans chaque ligne */
+
+
+/* ---------------------------- Style exercice 2 => B ---------------------------- */
+/* Style commun pour chaque ligne */
+#exo2 .line {
+    display: flex; /* Active Flexbox pour les lignes */
+    flex: 1; /* Chaque ligne prend une part égale de l'espace vertical disponible */
+}
+
+/* Alignement spécifique pour chaque ligne */
+
+/* Première ligne : aligne les éléments à gauche */
+#exo2 .line:nth-child(1) {
+    justify-content: flex-start; /* Aligne les éléments à gauche pour la première ligne */
+}
+
+/* Deuxième ligne : répartit les éléments uniformément */
+#exo2 .line:nth-child(2) {
+    justify-content: space-around; /* Répartit les éléments uniformément avec de l'espace autour d'eux pour la deuxième ligne */
+}
+
+/* Troisième ligne : aligne les éléments à droite */
+#exo2 .line:nth-child(3) {
+    justify-content: flex-end; /* Aligne les éléments à droite pour la troisième ligne */
+}
+
+/* ---------------------------- Style exercice 3 => C ---------------------------- */
+/* Alignement spécifique pour chaque ligne */
+
+/* Première ligne : aligne les éléments à gauche */
+#exo3 .line:nth-child(1) {
+    justify-content: flex-start; /* Aligne les éléments à gauche pour la première ligne */
+    gap: 5px;  /* rajoute un espace à droite des élements*/
+}
+
+/* Deuxième ligne : répartit les éléments uniformément */
+#exo3 .line:nth-child(2) {
+    justify-content: space-around; /* Répartit les éléments uniformément avec de l'espace autour d'eux pour la deuxième ligne */
+}
+
+/* Troisième ligne : aligne les éléments à droite */
+#exo3 .line:nth-child(3) {
+    justify-content: flex-end; /* Aligne les éléments à droite pour la troisième ligne */
+    gap: 5px; /* rajoute un espace à droite des élements*/
+}
+
+/* Modification spécifique pour l'élément 3 de la première ligne */
+#exo3 .line:nth-child(1) .elem:nth-child(3) {
+    flex-grow: 1; /* Permet à cet élément de grandir et occuper l'espace disponible */
+}
+
+/* Modification spécifique pour l'élément 1 de la dernière ligne */
+#exo3 .line:nth-child(3) .elem:nth-child(1) {
+    flex-grow: 1; /* Permet à cet élément de grandir et occuper l'espace disponible */
+}

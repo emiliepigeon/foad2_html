@@ -1,0 +1,57 @@
+/* Styles communs pour tous les conteneurs */
+.container, #exo2, #exo3 {
+    display: flex;
+    width: 600px;
+    height: 245px;
+    border: 2px solid green;
+}
+
+/* Styles de base pour les éléments */
+.elem {
+    width: 80px;
+    height: 80px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -0.5px;
+}
+
+/* Configuration pour l'exercice 1 */
+.container {
+    flex-direction: column;
+}
+
+.container > *, .column {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    flex-direction: row;
+}
+
+/* Ordre d'affichage des éléments */
+.elem1 { order: 1; }
+.elem2 { order: 2; }
+.elem3 { order: 3; }
+
+/* Styles communs pour les lignes dans exo2 et exo3 */
+#exo2 .line, #exo3 .line {
+    display: flex;
+    flex: 1;
+}
+
+/* Alignements spécifiques pour chaque ligne */
+#exo2 .line:nth-child(1), #exo3 .line:nth-child(1) { justify-content: flex-start; }
+#exo2 .line:nth-child(2), #exo3 .line:nth-child(2) { justify-content: space-around; }
+#exo2 .line:nth-child(3), #exo3 .line:nth-child(3) { justify-content: flex-end; }
+
+/* Ajustements spécifiques pour exo3 */
+#exo3 .line:nth-child(1), #exo3 .line:nth-child(3) { gap: 5px; }
+
+/* Croissance spécifique pour certains éléments dans exo3 */
+#exo3 .line:nth-child(1) .elem:nth-child(3),
+#exo3 .line:nth-child(3) .elem:nth-child(1) {
+    flex-grow: 1;
+}
