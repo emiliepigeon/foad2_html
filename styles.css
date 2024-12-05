@@ -1,0 +1,59 @@
+/* Style du conteneur principal */
+.container {
+    display: grid;
+    width: 600px;
+    height: 245px;
+    border: 2px solid green;
+}
+
+/* Style pour chaque élément individuel */
+.elem {
+    width: 80px;
+    height: 80px;
+    border: 1px solid red;
+    display: grid;
+    place-items: center;
+    margin: -0.5px;
+}
+
+/* Exercice 1 => A */
+#exo1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#exo1 .elem1 { grid-row: 1; }
+#exo1 .elem2 { grid-row: 2; }
+#exo1 .elem3 { grid-row: 3; }
+
+/* Exercice 2 => B */
+#exo2 {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#exo2 .line {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#exo2 .line:nth-child(1) { justify-items: start; }
+#exo2 .line:nth-child(2) { justify-items: center; }
+#exo2 .line:nth-child(3) { justify-items: end; }
+
+/* Exercice 3 => C */
+#exo3 {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#exo3 .line {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+#exo3 .line:nth-child(1) { justify-items: start; }
+#exo3 .line:nth-child(2) { justify-items: center; }
+#exo3 .line:nth-child(3) { justify-items: end; }
+
+#exo3 .line:nth-child(1) .elem:nth-child(3) { grid-column: 3 / -1; }
+#exo3 .line:nth-child(3) .elem:nth-child(1) { grid-column: 1 / 3; }
