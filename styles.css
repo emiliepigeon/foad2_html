@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+}
+
+/* Styles pour les sections de connexion et de contact */
+#connexion, #contact {
+    width: 100%;
+    max-width: 800px; /* Largeur maximale pour les deux sections */
+    margin: 0 auto; /* Centre la section horizontalement */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+/* ------------  Styles spécifiques à la section de connexion ------------ */
+.form-group {
+    display: grid;
+    gap: 5px;
+}
+
+label {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; /* Pour inclure le padding dans la largeur totale */
+}
+
+input[type="submit"],
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: grey; /* Couleur de fond pour les boutons */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur en forme de main */
+    justify-self: center; /* Centre le bouton dans sa cellule de grille */
+}
+
+/* ---------------- Styles pour la section de contact -----------------------*/
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
+    gap: 20px; /* Espacement entre les groupes de champs */
+}
+
+textarea {
+    resize: vertical; /* Permet seulement un redimensionnement vertical */
+}
+
+.button {
+    display: grid;
+    justify-content: center; /* Centre le bouton horizontalement */
+}
