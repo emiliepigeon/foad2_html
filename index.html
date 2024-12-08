@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Flex</title>
+    <!--Version 08/12/24-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Login</h1>
+        <!--EXERCICE 1-->
+        <section>
+            <div class="container">
+                <form action="">
+                    <div>
+                        <div>
+                            <label for="pass">Login:</label>
+                            <input type="password" id="pass" name="password" placeholder="entrer votre mot de passe"
+                                minlength="8" required />
+                        </div>
+                        <div>
+                            <label for="pass">Mot de passe:</label>
+                            <input type="password" id="pass" name="password" minlength="8" required />
+                        </div>
+                    </div>
+                    <input type="submit" value="Se connecter" />
+            </div>
+            </div>
+            </form>
+        </section>
+        <h1>Formulaire de contact</h1>
+        <!--EXERCICE 1-->
+        <section>
+            <div class="container">
+                <form action="">
+                    <div>
+                        <div>
+                            <label for="lastname">Nom:</label>
+                            <input type="text" id="lastname" name="last_name" placeholder="entrer votre nom" />
+                        </div>
+                        <div>
+                            <label for="firstname">Prénom:</label>
+                            <input type="text" id="firstname" name="first_name" placeholder="entrer votre prénom" />
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="mail">Adresse email:</label>
+                            <input type="email" id="mail" name="last_name" placeholder="entrer votre adresse mail" />
+                        </div>
+                        <div>
+
+                        </div>
+                        <div>
+                            <label for="menu-choix">Votre sujet:</label>
+                            <select name="subject" id="menu-choix">
+                                <option value="">----</option>
+                                <option value="sub1">Demande 1</option>
+                                <option value="sub2">Demande 2</option>
+                                <option value="sub3">Demande 3</option>
+                            </select>                        
+                        </div>
+                        <div>
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Envoyer le message</button>
+                    </div>
+
+                </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
