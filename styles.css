@@ -1,53 +1,72 @@
 /* -------------------------- Style du conteneur principal -------------------------- */
 .container {
-    display: grid; /* Active Grid pour le conteneur */
-    width: 600px; /* Largeur fixe du conteneur */
-    height: 245px; /* Hauteur fixe du conteneur */
-    border: 2px solid green; /* Bordure verte autour du conteneur */
-    grid-template-rows: repeat(3, 1fr); /* Définit 3 lignes de taille égale */
-    /* Centrage horizontal et vertical */
-    justify-content: center; /* Centre horizontalement les lignes */
-    align-items: center; /* Centre verticalement les éléments dans chaque ligne */
+    display: grid;
+    width: 600px;
+    height: 245px;
+    border: 2px solid green;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
 }
+
 /* -------------------------- Style pour chaque élément -------------------------- */
 .elem {
-    border: 1px solid red; /* Bordure rouge autour des éléments */
-    width: 80px; /* Largeur fixe des éléments */
-    height: 80px; /* Hauteur fixe des éléments */
-    
-    /* Centrage du contenu à l'intérieur de chaque élément */
+    border: 1px solid red;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
 /* -------------------------- EXO 1/A -------------------------- */
-
-/* Style pour chaque ligne */
-#exo1 .line1,#exo1 .line2,#exo1 .line3 {
-    display: grid; /* Chaque ligne devient un conteneur grid */
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de taille égale dans chaque ligne */
-    grid-template-rows: repeat(1); /* 3 lignes de taille égale */
-    grid-gap: 100px; /* Espace entre les éléments dans chaque ligne */
-    
-    /* Centrage des éléments dans chaque ligne */
-    justify-content: center; /* Centre horizontalement les éléments */
+#exo1 .container {
+    grid-template-rows: repeat(3, 1fr);
 }
 
+#exo1 .line1, #exo1 .line2, #exo1 .line3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    justify-content: center;
+}
 
 /* -------------------------- EXO 2/B -------------------------- */
-
-/* Style pour chaque ligne */
-#exo2 .line1,#exo2 .line2,#exo2 .line3 {
-    display: grid; /* Chaque ligne devient un conteneur grid */
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de taille égale dans chaque ligne */
-    grid-template-rows: repeat(1); /* 3 lignes de taille égale */
-    grid-gap: 100px; /* Espace entre les éléments dans chaque ligne */
-    
-    /* Centrage des éléments dans chaque ligne */
-    justify-content: center; /* Centre horizontalement les éléments */
-    grid-area: 1 / 3  ; /* Définit la zone de la*/
+#exo2 .container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
 }
-/* Nouveau style spécifique pour la première ligne */
-/*voir span et area*/
+
+#exo2 .line {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+}
+
+#exo2 .line:nth-child(1) { justify-content: start; }
+#exo2 .line:nth-child(2) { justify-content: space-around; }
+#exo2 .line:nth-child(3) { justify-content: end; }
+
+/* -------------------------- EXO 3/C -------------------------- */
+#exo3 .container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#exo3 .line {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+}
+
+#exo3 .line:nth-child(1) {
+    justify-content: start;
+    grid-template-columns: 80px 80px 1fr;
+}
+
+#exo3 .line:nth-child(2) { justify-content: space-around; }
+
+#exo3 .line:nth-child(3) {
+    justify-content: end;
+    grid-template-columns: 1fr 80px 80px;
+}
