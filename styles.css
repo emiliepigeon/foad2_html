@@ -1,0 +1,69 @@
+h1 {
+    text-align: center;
+}
+/* Styles pour les sections de connexion et de contact */
+#connexion, #contact {
+    width: 100%;
+    max-width: 800px; /* Largeur maximale pour les deux sections */
+    margin: 0 auto; /* Centre la section horizontalement */
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    flex-direction: column; /* Aligne les éléments en colonne */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+/* ------------  Styles spécifiques à la section de connexion ------------ */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; /* Pour inclure le padding dans la largeur totale */
+}
+
+input[type="submit"],
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: grey; /* Couleur de fond pour les boutons */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur en forme de main */
+}
+
+/* input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #45a049;
+} */
+
+/* ---------------- Styles pour la section de contact -----------------------*/
+.form-row {
+    display: flex;
+    gap: 20px; /* Espacement entre les groupes de champs */
+}
+
+textarea {
+    resize: vertical; /* Permet seulement un redimensionnement vertical */
+}
+
+.button {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+}
