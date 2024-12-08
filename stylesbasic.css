@@ -32,11 +32,6 @@
     flex-direction: column; /* Change la direction du conteneur en colonne */
 }
 
-/* Sélectionne tous les enfants directs du conteneur */
-.container > * {
-    display: flex; /* Active Flexbox pour chaque ligne */
-    justify-content: space-around; /* Répartit l'espace horizontalement entre les éléments */
-}
 
 /* Modifie la direction des colonnes pour les afficher en ligne */
 .column {
@@ -49,30 +44,37 @@
 .elem3 { order: 3; } /* Affiche en troisième dans chaque ligne */
 
 
+
 /* ---------------------------- Style exercice 2 => B ---------------------------- */
-/* Style commun pour chaque ligne */
-#exo2 .line {
-    display: flex; /* Active Flexbox pour les lignes */
-    flex: 1; /* Chaque ligne prend une part égale de l'espace vertical disponible */
+#exo2 .container {
+    align-items: center;
 }
 
-/* Alignement spécifique pour chaque ligne */
-
-/* Première ligne : aligne les éléments à gauche */
-#exo2 .line:nth-child(1) {
-    justify-content: flex-start; /* Aligne les éléments à gauche pour la première ligne */
+#exo2 .line1 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: start;
+    gap: 10px;
 }
 
-/* Deuxième ligne : répartit les éléments uniformément */
-#exo2 .line:nth-child(2) {
-    justify-content: space-around; /* Répartit les éléments uniformément avec de l'espace autour d'eux pour la deuxième ligne */
+#exo2 .line2 {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
 }
 
-/* Troisième ligne : aligne les éléments à droite */
-#exo2 .line:nth-child(3) {
-    justify-content: flex-end; /* Aligne les éléments à droite pour la troisième ligne */
+#exo2 .line3 {
+    grid-column: 3 / 4;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: end;
+    gap: 10px;
 }
-
 /* ---------------------------- Style exercice 3 => C ---------------------------- */
 /* Alignement spécifique pour chaque ligne */
 
