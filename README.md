@@ -1,8 +1,9 @@
 Hello html => cours et tp voir ma prise de note sur notion.
 
-Foad 29/11/2024 => exo 1
+FOAD 06/12/2024
 
-Suite FLEXBOX => 04/12/2024 = branche Flex
+NB:pour mon filet => pensr à regarder doc pseudo-class pour lui donner une taille en largeur
+https://developer.mozilla.org/en-US/docs/Web/CSS/::after
 
 README pour les Exercices de Formulaire avec Flexbox
 Introduction

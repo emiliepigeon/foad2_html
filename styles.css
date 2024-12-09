@@ -1,5 +1,13 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 h1 {
     text-align: center;
+    border-bottom: 1px solid grey;
+    border-bottom-width: thick;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 5px;
 }
 /* Styles pour les sections de connexion et de contact */
 #connexion, #contact {
@@ -11,6 +19,8 @@ h1 {
     align-items: center; /* Centre le contenu verticalement */
     flex-direction: column; /* Aligne les éléments en colonne */
 }
+
+
 
 .container {
     display: flex;
@@ -27,6 +37,9 @@ h1 {
 label {
     margin-bottom: 5px;
     text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 input[type="text"],
@@ -37,6 +50,7 @@ textarea {
     width: 100%;
     padding: 8px;
     box-sizing: border-box; /* Pour inclure le padding dans la largeur totale */
+    border-radius: 5px;
 }
 
 input[type="submit"],
@@ -46,6 +60,8 @@ button[type="submit"] {
     color: white; /* Couleur du texte */
     border: none; /* Pas de bordure */
     cursor: pointer; /* Curseur en forme de main */
+    border-radius: 5px;
+
 }
 
 /* input[type="submit"]:hover,
@@ -61,6 +77,10 @@ button[type="submit"]:hover {
 
 textarea {
     resize: vertical; /* Permet seulement un redimensionnement vertical */
+}
+
+#connexion button {
+    margin-bottom: 25px;
 }
 
 .button {

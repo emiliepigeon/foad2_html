@@ -24,18 +24,18 @@
                         <!-- Label associé à l'input login -->
                         <label for="login">Login:</label>
                         <!-- Champ de saisie pour le login -->
-                        <input type="text" id="login" name="login" placeholder="Entrez votre login" required />
+                        <input type="text" id="login" name="login" placeholder="Entrez votre login" minlength="8" required  />
                     </div>
                     <!-- Groupe pour le champ de mot de passe -->
                     <div class="form-group">
                         <label for="pass">Mot de passe:</label>
                         <!-- Champ de saisie pour le mot de passe (type="password" cache les caractères) -->
-                        <input type="password" id="pass" name="password" placeholder="Entrez votre mot de passe" minlength="8" required />
+                        <input type="password" id="pass" name="password" placeholder="••••••••" />
                     </div>
                     <!-- Groupe pour le bouton de soumission -->
-                    <div class="form-group">
+                    <div class="button">
                         <!-- Bouton pour soumettre le formulaire -->
-                        <input type="submit" value="Se connecter" />
+                        <button type="submit">Connexion</button>
                     </div>
                 </div>
             </form>
