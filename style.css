@@ -1,0 +1,54 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif; /* Police de caractère */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 20px; /* Ajoute un peu d'espace autour du contenu */
+    background-color: #fff; /* Couleur de fond douce */
+    text-align: center; /* Centre le texte de tout le corps */
+}
+
+header {
+    margin-bottom: 20px; /* Espace sous l'en-tête */
+}
+
+h1 {
+    margin-bottom: 20px; /* Espace sous le titre principal */
+}
+
+/* Styles pour la navigation */
+nav ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+nav ul li {
+    display: inline; /* Affiche les éléments de la liste en ligne */
+    margin-right: 15px; /* Espace entre les éléments de la liste */
+}
+
+nav a {
+    text-decoration: none; /* Supprime la décoration des liens */
+    color: black; /* Couleur du texte des liens */
+}
+
+/* Styles pour le tableau */
+table {
+    width: 100%; /* Le tableau occupe toute la largeur disponible */
+    max-width: 800px; /* Largeur maximale du tableau */
+    margin: 0 auto; /* Centre le tableau horizontalement */
+    border-collapse: collapse; /* Supprime les espaces entre les bordures des cellules */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Bordure grise autour des cellules */
+    padding: 10px; /* Espace intérieur dans les cellules */
+}
+
+th {
+    background-color: grey; /* Couleur de fond pour les en-têtes */
+}
+
+/* Styles pour le pied de page */
+footer {
+    margin-top: 20px; /* Espace au-dessus du pied de page */
+}
