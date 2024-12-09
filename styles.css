@@ -1,104 +1,115 @@
-/* ---------------------------- Style du conteneur principal ---------------------------- */
-.container {
-    display: flex; /* Active Flexbox pour le conteneur */
-    width: 600px; /* Largeur fixe du conteneur */
-    height: 245px; /* Hauteur fixe du conteneur */
-    border: 2px solid green; /* Bordure verte autour du conteneur */
-}
-
-/* ---------------------------- Style exercice l => A ---------------------------- */
-
-/* Style pour chaque colonne */
-.column {
-    display: flex; /* Active Flexbox pour les colonnes */
-    flex-direction: column; /* Empile les éléments verticalement dans chaque colonne */
-    justify-content: space-around; /* Répartit l'espace verticalement entre les éléments */
-    flex: 1; /* Permet à chaque colonne de prendre une part égale de l'espace disponible */
-}
 
 /* Style pour chaque élément individuel */
 .elem {
     width: 80px; /* Largeur fixe pour chaque élément */
     height: 80px; /* Hauteur fixe pour chaque élément */
-    border: 1px solid red; /* Bordure rouge autour de chaque élément */
-    display: flex; /* Active Flexbox pour centrer le contenu */
-    align-items: center; /* Centre verticalement le contenu */
-    justify-content: center; /* Centre horizontalement le contenu */
-    margin: -0.5px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ----------------------------- EXERCICE GRID exo 1/A ----------------------------- */
+/* Style pour le conteneur */
+#exo1 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 600px;
+    height: 245px;
+    border: 2px solid green;
+    gap: 10px; /* Espace entre les éléments de la grille */
+    justify-items: center; /* Centre les éléments horizontalement dans leurs cellules */
+    align-items: center; /* Centre les éléments verticalement dans leurs cellules */
 }
 
-/* Réorganisation des éléments */
-.container {
-    flex-direction: column; /* Change la direction du conteneur en colonne */
+/* Positionne les éléments dans la grille */
+#exo1 .elem:nth-child(1) { grid-row: 1; grid-column: 1; }
+#exo1 .elem:nth-child(2) { grid-row: 1; grid-column: 2; }
+#exo1 .elem:nth-child(3) { grid-row: 1; grid-column: 3; }
+
+#exo1 .elem:nth-child(4) { grid-row: 2; grid-column: 1; }
+#exo1 .elem:nth-child(5) { grid-row: 2; grid-column: 2; }
+#exo1 .elem:nth-child(6) { grid-row: 2; grid-column: 3; }
+
+#exo1 .elem:nth-child(7) { grid-row: 3; grid-column: 1; }
+#exo1 .elem:nth-child(8) { grid-row: 3; grid-column: 2; }
+#exo1 .elem:nth-child(9) { grid-row: 3; grid-column: 3; }
+
+/* ----------------------------- EXERCICE GRID exo 2/B ----------------------------- */
+/* Style pour le conteneur */
+#exo2 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 600px;
+    height: 245px;
+    border: 2px solid green;
 }
 
-/* Sélectionne tous les enfants directs du conteneur */
-.container > * {
-    display: flex; /* Active Flexbox pour chaque ligne */
-    justify-content: space-around; /* Répartit l'espace horizontalement entre les éléments */
-}
-
-/* Modifie la direction des colonnes pour les afficher en ligne */
-.column {
-    flex-direction: row; /* Aligne les éléments horizontalement */
-}
-
-/* Définit l'ordre d'affichage pour chaque groupe d'éléments */
-.elem1 { order: 1; } /* Affiche en premier dans chaque ligne */
-.elem2 { order: 2; } /* Affiche en deuxième dans chaque ligne */
-.elem3 { order: 3; } /* Affiche en troisième dans chaque ligne */
-
-
-/* ---------------------------- Style exercice 2 => B ---------------------------- */
-/* Style commun pour chaque ligne */
+/* Style pour chaque ligne */
 #exo2 .line {
-    display: flex; /* Active Flexbox pour les lignes */
-    flex: 1; /* Chaque ligne prend une part égale de l'espace vertical disponible */
+    display: flex;
+    gap: 10px;
 }
 
-/* Alignement spécifique pour chaque ligne */
-
-/* Première ligne : aligne les éléments à gauche */
-#exo2 .line:nth-child(1) {
-    justify-content: flex-start; /* Aligne les éléments à gauche pour la première ligne */
+#exo2 .line1 {
+    justify-content: flex-start; /* Aligne les éléments de la ligne 1 à gauche */
 }
 
-/* Deuxième ligne : répartit les éléments uniformément */
-#exo2 .line:nth-child(2) {
-    justify-content: space-around; /* Répartit les éléments uniformément avec de l'espace autour d'eux pour la deuxième ligne */
+#exo2 .line2 {
+    justify-content: space-around; /* Répartit les éléments de la ligne 2 de manière égale */
 }
 
-/* Troisième ligne : aligne les éléments à droite */
-#exo2 .line:nth-child(3) {
-    justify-content: flex-end; /* Aligne les éléments à droite pour la troisième ligne */
+#exo2 .line3 {
+    justify-content: flex-end; /* Aligne les éléments de la ligne 3 à droite */
 }
 
-/* ---------------------------- Style exercice 3 => C ---------------------------- */
-/* Alignement spécifique pour chaque ligne */
+/* ----------------------------- EXERCICE GRID exo 3/C ----------------------------- */
 
-/* Première ligne : aligne les éléments à gauche */
-#exo3 .line:nth-child(1) {
-    justify-content: flex-start; /* Aligne les éléments à gauche pour la première ligne */
-    gap: 5px;  /* rajoute un espace à droite des élements*/
+/* Style pour le conteneur */
+#exo3 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 600px;
+    height: 245px;
+    border: 2px solid green;
+    gap: 0; /* Supprime l'espace vertical entre les lignes */
 }
 
-/* Deuxième ligne : répartit les éléments uniformément */
-#exo3 .line:nth-child(2) {
-    justify-content: space-around; /* Répartit les éléments uniformément avec de l'espace autour d'eux pour la deuxième ligne */
+/* Style pour chaque ligne */
+#exo3 .line {
+    display: flex;
+    gap: 10px;
 }
 
-/* Troisième ligne : aligne les éléments à droite */
-#exo3 .line:nth-child(3) {
-    justify-content: flex-end; /* Aligne les éléments à droite pour la troisième ligne */
-    gap: 5px; /* rajoute un espace à droite des élements*/
+#exo3 .line1 {
+    justify-content: flex-start; /* Aligne les éléments de la ligne 1 à gauche */
 }
 
-/* Modification spécifique pour l'élément 3 de la première ligne */
-#exo3 .line:nth-child(1) .elem:nth-child(3) {
-    flex-grow: 1; /* Permet à cet élément de grandir et occuper l'espace disponible */
+#exo3 .line2 {
+    justify-content: space-around; /* Répartit les éléments de la ligne 2 de manière égale */
 }
 
-/* Modification spécifique pour l'élément 1 de la dernière ligne */
-#exo3 .line:nth-child(3) .elem:nth-child(1) {
-    flex-grow: 1; /* Permet à cet élément de grandir et occuper l'espace disponible */
+#exo3 .line3 {
+    justify-content: flex-end; /* Aligne les éléments de la ligne 3 à droite */
 }
+
+/* Fait que l'elem3 et l'elem7 prennent toute la place restante */
+#exo3 .line1 .elem3 {
+    flex-grow: 1; /* Prend la place restante pour elem3 */
+}
+
+#exo3 .line3 .elem1 {
+    flex-grow: 1; /* Prend la place restante pour elem7 */
+}
+
+/* Fixe les largeurs des autres éléments */
+#exo3 .line1 .elem1, #exo3 .line1 .elem2,
+#exo3 .line2 .elem1, #exo3 .line2 .elem2, #exo3 .line2 .elem3,
+#exo3 .line3 .elem2, #exo3 .line3 .elem3 {
+    width: 80px;
+    height: 80px;
+}
+
+
+
+
