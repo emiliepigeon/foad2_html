@@ -1,6 +1,5 @@
 /* ---------------------------- Style du conteneur principal ---------------------------- */
 .container {
-    display: flex; /* Active Flexbox pour le conteneur */
     width: 600px; /* Largeur fixe du conteneur */
     height: 245px; /* Hauteur fixe du conteneur */
     border: 2px solid green; /* Bordure verte autour du conteneur */
