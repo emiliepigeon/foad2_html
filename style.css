@@ -1,0 +1,102 @@
+/* -------------- style général du pèle mèle d'image ------------*/
+.container {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    border: 1px solid red;
+    justify-content: space-around;
+}
+.image {
+    border: 1px solid blue;
+}
+.div {
+    border: 1px solid green;
+}
+/* -------------- #div1 ------------*/
+#img1 {
+    width: 200px;
+    height: 600px;
+    background-image: url(http://fakeimg.pl/200x600/);
+    background-repeat: no-repeat;
+}
+/* -------------- #div2 ------------*/
+#div2{
+    display: flex;
+    flex-direction: row;
+}
+#img2 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;
+}
+#img3 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+/* -------------- #div3 ------------*/
+#img4 {
+    width: 200px;
+    height: 300px;
+    background-image: url(http://fakeimg.pl/200x300/);
+    background-repeat: no-repeat;    
+}
+/* -------------- #div4 ------------*/
+#div4 {
+    display: flex;
+    flex-direction: row;
+}
+#img5 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+#img6 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+/* -------------- #div5 ------------*/
+#img7 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+#img8 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+#img9 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+#img10 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+/* -------------- #div6 ------------*/
+#img11 {
+    width: 100px;
+    height: 400px;
+    background-image: url(http://fakeimg.pl/100x400/);
+    background-repeat: no-repeat;  
+}
+/* -------------- #div7 ------------*/
+#img12 {
+    width: 200px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/200x100/);
+    background-repeat: no-repeat;  
+}
