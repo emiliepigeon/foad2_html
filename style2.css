@@ -1,0 +1,158 @@
+/* -------------- style général du pèle mèle d'image ------------*/
+.container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border: 1px solid red;
+    gap: 25px;
+    /* justify-content: space-around; */
+    text-align: center;
+    justify-content: center;
+}
+li, a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: cadetblue;
+    font-weight: 600;
+}
+/* .image {
+    border: 1px solid blue;
+}
+.div {
+    border: 1px solid green;
+} */
+/* -------------- #div1 ------------*/
+#div1 {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+
+}
+#img1 {
+    width: 200px;
+    height: 600px;
+    background-image: url(http://fakeimg.pl/200x600/);
+    background-repeat: no-repeat;
+}
+/* ---------------#groupe1 -----------*/
+#groupe1 {
+    text-align: center;
+    height: 500px;
+}
+/* -------------- #div2 ------------*/
+#div2{
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    gap: 25px;
+}
+#img2 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;
+}
+#img3 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+/* -------------- #div3 ------------*/
+#div3 {
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+}
+#img4 {
+    width: 225px;
+    height: 352px;
+    background-image: url(http://fakeimg.pl/220x350/);
+    background-repeat: no-repeat;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/* -------------- #div4 ------------*/
+#div4 {
+    display: flex;
+    flex-direction: row;
+    align-self: end;
+    gap: 25px;
+}
+#img5 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+#img6 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+/* ---------------#groupe2 -----------*/
+/* ---------------#sousgroupe2 -----------*/
+/* -------------- #div5 ------------*/
+#sousgroupe2{
+    display: flex;
+    gap: 25px;
+}
+#div5 {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 25px;
+}
+#img7 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+#img8 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+#img9 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+#img10 {
+    width: 100px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/100x100/);
+    background-repeat: no-repeat;  
+}
+/* -------------- #div6 ------------*/
+#div6 {
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+}
+#img11 {
+    width: 100px;
+    height: 475px;
+    background-image: url(http://fakeimg.pl/100x475/);
+    background-repeat: no-repeat;  
+}
+/* ---------------FIN #sougroupe2 -----------*/
+/* -------------- #div7 ------------*/
+#div7 {
+    display: flex;
+    flex-direction: row;
+    align-self: end;
+}
+#img12 {
+    width: 225px;
+    height: 100px;
+    background-image: url(http://fakeimg.pl/225x100/);
+    background-repeat: no-repeat;
+    margin-top: 25px;
+}
