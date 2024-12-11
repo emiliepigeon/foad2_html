@@ -1,158 +1,167 @@
-/* -------------- style général du pèle mèle d'image ------------*/
+/* -------------- Style général du pêle-mêle d'images ------------*/
 .container {
     display: flex;
+    /* Utilisation de Flexbox pour la mise en page */
     width: 100%;
-    height: auto;
-    margin: auto;
-    border: 1px solid red;
+    /* Largeur du conteneur à 100% */
+    height: 100vh;
+    /* Hauteur du conteneur à 100% de la fenêtre */
     gap: 25px;
-    /* justify-content: space-around; */
-    text-align: center;
+    /* Espacement entre les éléments enfants */
     justify-content: center;
+    /* Centrage des éléments horizontalement */
+    flex-wrap: wrap;
+    /* Permet aux éléments de passer à la ligne si nécessaire */
 }
+
+/* Style des liens et des éléments de liste */
 li, a {
     text-decoration: none;
+    /* Supprime le soulignement des liens */
     font-size: 20px;
+    /* Taille de police pour les liens */
     margin-bottom: 20px;
+    /* Marge inférieure pour espacer les éléments */
     color: cadetblue;
+    /* Couleur du texte des liens */
     font-weight: 600;
+    /* Épaisseur de la police pour les liens */
 }
-/* .image {
-    border: 1px solid blue;
-}
-.div {
-    border: 1px solid green;
-} */
-/* -------------- #div1 ------------*/
-#div1 {
-    display: flex;
-    flex-direction: column;
-    align-self: start;
 
-}
-#img1 {
-    width: 200px;
-    height: 600px;
-    background-image: url(http://fakeimg.pl/200x600/);
-    background-repeat: no-repeat;
-}
-/* ---------------#groupe1 -----------*/
-#groupe1 {
-    text-align: center;
-    height: 500px;
-}
-/* -------------- #div2 ------------*/
-#div2{
+/* -------------- Styles des divisions principales ------------*/
+/* Chaque groupe d'images est un conteneur flexible qui s'étire et se rétrécit */
+#div1, #groupe1, #groupe2 {
     display: flex;
-    flex-direction: row;
-    align-self: start;
-    gap: 25px;
+    /* Utilisation de Flexbox pour chaque groupe */
+    flex-direction: column;
+    /* Orientation verticale des enfants */
+    flex: 1 1 0;
+    /* Permet à chaque groupe de croître et de rétrécir avec une base de 0 */
 }
-#img2 {
-    width: 100px;
-    height: 100px;
-    background-image: url(http://fakeimg.pl/100x100/);
+
+/* -------------- Style général des images ------------*/
+/* Classe commune pour toutes les images pour appliquer un style uniforme */
+.image {
+    flex: 1;
+    /* Chaque image occupe l'espace disponible dans son conteneur */
     background-repeat: no-repeat;
+    /* Empêche la répétition de l'image de fond */
+    background-size: cover;
+    /* L'image couvre entièrement le conteneur sans déformation */
+    background-position: center;
+    /* Centre l'image dans le conteneur */
 }
-#img3 {
-    width: 100px;
-    height: 100px;
-    background-image: url(http://fakeimg.pl/100x100/);
-    background-repeat: no-repeat;  
+
+/* -------------- Styles des sous-divisions ------------*/
+/* Conteneurs pour les images dans chaque groupe avec espacement entre elles */
+#div2, #div4 {
+    display: flex;
+    /* Utilisation de Flexbox pour aligner les images horizontalement */
+    gap: 25px;
+    /* Espacement entre les images dans ces conteneurs */
+    flex: 1;
+    /* Permet à ces groupes d'occuper l'espace disponible */
 }
-/* -------------- #div3 ------------*/
+
 #div3 {
     display: flex;
-    flex-direction: row;
-    align-self: start;
+    /* Utilisation de Flexbox pour aligner les images horizontalement */
+    flex: 2;
+    /* Ce groupe est deux fois plus grand que les autres groupes */
+    margin: 25px 0;
+    /* Marge supérieure et inférieure pour espacer ce groupe des autres */
 }
-#img4 {
-    width: 225px;
-    height: 352px;
-    background-image: url(http://fakeimg.pl/220x350/);
-    background-repeat: no-repeat;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-/* -------------- #div4 ------------*/
-#div4 {
+
+#sousgroupe2 {
     display: flex;
-    flex-direction: row;
-    align-self: end;
+    /* Utilisation de Flexbox pour aligner les images horizontalement dans ce sous-groupe */
     gap: 25px;
+    /* Espacement entre les images dans ce sous-groupe */
+    flex: 3;
+    /* Ce sous-groupe est trois fois plus grand que les autres groupes similaires */
 }
-#img5 {
-    width: 100px;
-    height: 100px;
-    background-image: url(http://fakeimg.pl/100x100/);
-    background-repeat: no-repeat;  
-}
-#img6 {
-    width: 100px;
-    height: 100px;
-    background-image: url(http://fakeimg.pl/100x100/);
-    background-repeat: no-repeat;  
-}
-/* ---------------#groupe2 -----------*/
-/* ---------------#sousgroupe2 -----------*/
-/* -------------- #div5 ------------*/
-#sousgroupe2{
-    display: flex;
-    gap: 25px;
-}
+
 #div5 {
     display: flex;
+    /* Utilisation de Flexbox pour ce groupe d'images verticales */
     flex-direction: column;
-    align-self: start;
+    /* Alignement vertical des images dans ce groupe */
     gap: 25px;
+    /* Espacement entre les images verticales dans ce groupe */
+    flex: 1;
+    /* Permet à ce groupe d'occuper l'espace disponible */
 }
-#img7 {
-    width: 100px;
-    height: 100px;
-    background-image: url(http://fakeimg.pl/100x100/);
-    background-repeat: no-repeat;  
-}
-#img8 {
-    width: 100px;
-    height: 100px;
-    background-image: url(http://fakeimg.pl/100x100/);
-    background-repeat: no-repeat;  
-}
-#img9 {
-    width: 100px;
-    height: 100px;
-    background-image: url(http://fakeimg.pl/100x100/);
-    background-repeat: no-repeat;  
-}
-#img10 {
-    width: 100px;
-    height: 100px;
-    background-image: url(http://fakeimg.pl/100x100/);
-    background-repeat: no-repeat;  
-}
-/* -------------- #div6 ------------*/
+
 #div6 {
     display: flex;
-    flex-direction: row;
-    align-self: start;
+    /* Utilisation de Flexbox pour ce groupe d'images horizontales */
+    flex: 1;
+    /* Permet à ce groupe d'occuper l'espace disponible */
 }
-#img11 {
-    width: 100px;
-    height: 475px;
-    background-image: url(http://fakeimg.pl/100x475/);
-    background-repeat: no-repeat;  
-}
-/* ---------------FIN #sougroupe2 -----------*/
-/* -------------- #div7 ------------*/
+
 #div7 {
     display: flex;
-    flex-direction: row;
-    align-self: end;
-}
-#img12 {
-    width: 225px;
-    height: 100px;
-    background-image: url(http://fakeimg.pl/225x100/);
-    background-repeat: no-repeat;
+    /* Utilisation de Flexbox pour ce groupe d'images horizontales en bas */
+    flex: 1;
+    /* Permet à ce groupe d'occuper l'espace disponible */
     margin-top: 25px;
+    /* Marge supérieure pour espacer ce groupe des autres éléments au-dessus */
+}
+
+/* -------------- Images spécifiques ------------*/
+/* Définition des images avec leurs URL respectives */
+
+/* Grande image verticale en haut à gauche du conteneur principal */
+#img1 {
+    background-image: url(https://fastly.picsum.photos/id/82/1500/997.jpg?hmac=VcdCqu9YiLpbCtr8YowUCSUD3-245TGekiXmtiMXotw);
+}
+
+/* Petites images carrées (deux en haut à droite) */
+#img2 {
+    background-image: url(https://fastly.picsum.photos/id/89/4608/2592.jpg?hmac=G9E4z5RMJgMUjgTzeR4CFlORjvogsGtqFQozIRqugBk);
+}
+
+#img3 {
+    background-image: url(https://fastly.picsum.photos/id/90/3000/1992.jpg?hmac=v_xO0GFiGn3zpcKzWIsZ3WoSoxJuAEXukrYJUdo2S6g);
+}
+
+/* Image rectangulaire moyenne au centre du conteneur principal (entre div2 et div4) */
+#img4 {
+    background-image: url(https://fastly.picsum.photos/id/98/3264/2176.jpg?hmac=yRaOwMpmio9mwf43lbPEYI_5-WiPWoghJZyOKldQ43U);
+}
+
+/* Petites images carrées (deux en bas à gauche) dans div4 */
+#img5 {
+    background-image: url(https://fastly.picsum.photos/id/159/5000/2460.jpg?hmac=h12oeFVhY4-vOrALaICJ4k4dqemWn1lvaMN8yvnIU1w);
+}
+
+#img6 {
+    background-image: url(https://fastly.picsum.photos/id/189/2048/1536.jpg?hmac=R5GGFRgevRAOGu_pBXx0u2hhkhT30ICuSMIAisvauIo);
+}
+
+/* Petites images carrées dans div5 (sous-groupe) qui s'étendent verticalement */
+#img7 {
+    background-image: url(https://fastly.picsum.photos/id/202/2392/1260.jpg?hmac=zMn-DoKWGhgfhSmd4gA6ujHLqm36v0uIyJ0zz8EJ2UI);
+}
+
+#img8 {
+    background-image: url(https://fastly.picsum.photos/id/217/4000/2590.jpg?hmac=FqwQ5H36hiVE2F-FZhkN9kF6TMvUksIb7HGzMn0JRq4);
+}
+
+#img9 {
+    background-image: url(https://fastly.picsum.photos/id/222/1800/977.jpg?hmac=pd-vkWA544ktuiSTDnx0Btezs9lMx99cvCU4KVzFBmI);
+}
+
+#img10 {
+    background-image: url(https://fastly.picsum.photos/id/277/5000/3333.jpg?hmac=MMop5h2SxxGwjWrUDwakekxLvHNUOG_d9wRUYgvINhU);
+}
+
+/* Image verticale moyenne dans div6 (sous-groupe) qui s'étend horizontalement */
+#img11 {
+    background-image: url(https://fastly.picsum.photos/id/118/1500/1000.jpg?hmac=jumRsHTbfg0frrVd5Xw1187nwNcZCqJbqrdlXpPAIjw);
+}
+
+/* Image horizontale en bas (dernière image) dans div7 */
+#img12 {
+    background-image: url(https://fastly.picsum.photos/id/106/2592/1728.jpg?hmac=E1-3Hac5ffuCVwYwexdHImxbMFRsv83exZ2EhlYxkgY);
 }
