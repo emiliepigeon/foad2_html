@@ -1,0 +1,40 @@
+/* -------------- Style général du pêle-mêle d'images ------------*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    border: 1px solid green;
+    /* Utilisation de Flexbox pour la mise en page */
+    /* width: 100%; */
+    /* Largeur du conteneur à 100% */
+    /* height: 100vh; */
+    /* Hauteur du conteneur à 100% de la fenêtre */
+    /* gap: 25px; */
+    /* Espacement entre les éléments enfants */
+    /* justify-content: center; */
+    /* Centrage des éléments horizontalement */
+    /* flex-wrap: wrap; */
+    /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+/* Style des liens et des éléments de liste */
+li, a {
+    text-decoration: none;
+    /* Supprime le soulignement des liens */
+    font-size: 20px;
+    /* Taille de police pour les liens */
+    margin-bottom: 20px;
+    /* Marge inférieure pour espacer les éléments */
+    color: cadetblue;
+    /* Couleur du texte des liens */
+    font-weight: 600;
+    /* Épaisseur de la police pour les liens */
+}
+
+#img1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    background-image: url(https://fastly.picsum.photos/id/82/1500/997.jpg?hmac=VcdCqu9YiLpbCtr8YowUCSUD3-245TGekiXmtiMXotw);
+
+}
