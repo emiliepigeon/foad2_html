@@ -10,8 +10,8 @@
 
 }
 
-/* Style des liens et des éléments de liste */
-li, a {
+/* Style des liens */
+a {
     text-decoration: none;
     /* Supprime le soulignement des liens */
     font-size: 20px;
@@ -53,7 +53,6 @@ li, a {
 /* Conteneurs pour les images dans chaque groupe avec espacement entre elles */
 #div2, #div4 {
     display: flex;
-
     /* Espacement entre les images dans ces conteneurs */
     flex: 2;
     /* Permet à ces groupes d'occuper l'espace disponible */
@@ -69,7 +68,6 @@ li, a {
 #sousgroupe2 {
     display: flex;
     /* Utilisation de Flexbox pour aligner les images horizontalement dans ce sous-groupe */
-
     flex: 1;
     /* Ce sous-groupe est trois fois plus grand que les autres groupes similaires */
 }
@@ -78,7 +76,6 @@ li, a {
     display: flex;
     /* Utilisation de Flexbox pour ce groupe d'images verticales */
     flex-direction: row;
-
     /* Espacement entre les images verticales dans ce groupe */
     flex: 1;
     /* Permet à ce groupe d'occuper l'espace disponible */

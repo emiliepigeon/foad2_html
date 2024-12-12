@@ -9,8 +9,8 @@
     min-height: 100vh; /* Hauteur minimale de 100% de la hauteur de la fenêtre */
 }
 
-/* Style des liens et des éléments de liste */
-li, a {
+/* Style des liens */
+a {
     text-decoration: none; /* Supprime le soulignement des liens */
     font-size: 20px; /* Taille de police pour les liens */
     margin-bottom: 20px; /* Marge inférieure pour espacer les éléments */
@@ -20,11 +20,12 @@ li, a {
 
 /* Style général pour les images */
 .image {
-    width: 100%; /* Largeur à 100% du div parent */
     height: 100%; /* Hauteur à 100% du div parent */
     background-size: cover; /* L'image couvre tout l'espace disponible */
     background-position: center; /* Centre l'image dans son conteneur */
 }
+/*******************************************************************************************************/
+
 
 /* ----------- grande image > #div1 > #img1 -----------*/
 #div1 {
@@ -89,7 +90,7 @@ li, a {
 /* -----------  #div7 > #img12 -----------*/
 /* Occupe automatiquement la deuxième ligne de #groupe2 */
 
-
+/******************************************************************************************************************/
 /* -------------- Images spécifiques ------------*/
 /* Définition des images avec leurs URL respectives */
 #img1 { background-image: url(https://fastly.picsum.photos/id/82/1500/997.jpg?hmac=VcdCqu9YiLpbCtr8YowUCSUD3-245TGekiXmtiMXotw);}

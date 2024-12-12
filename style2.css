@@ -14,8 +14,8 @@
     /* Permet aux éléments de passer à la ligne si nécessaire */
 }
 
-/* Style des liens et des éléments de liste */
-li, a {
+/* Style des liens */
+a {
     text-decoration: none;
     /* Supprime le soulignement des liens */
     font-size: 20px;
@@ -108,6 +108,7 @@ li, a {
     /* Marge supérieure pour espacer ce groupe des autres éléments au-dessus */
 }
 
+/***********************************************************************************************************/
 /* -------------- Images spécifiques ------------*/
 /* Définition des images avec leurs URL respectives */
 
