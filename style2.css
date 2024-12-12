@@ -84,7 +84,7 @@ li, a {
 #div5 {
     display: flex;
     /* Utilisation de Flexbox pour ce groupe d'images verticales */
-    flex-direction: column;
+    flex-direction: row;
     /* Alignement vertical des images dans ce groupe */
     gap: 25px;
     /* Espacement entre les images verticales dans ce groupe */
