@@ -4,7 +4,7 @@
     grid-template-columns: repeat(7, 1fr); /* Crée 7 colonnes de taille égale */
     grid-template-rows: repeat(5, 1fr); /* Crée 5 lignes de taille égale */
     grid-gap: 10px; /* Espace entre les éléments de la grille */
-    border: 1px solid green; /* Bordure verte autour du conteneur principal */
+    /*border: 1px solid green;*/ /* Bordure verte autour du conteneur principal */
     height: auto; /* Hauteur automatique basée sur le contenu */
     min-height: 100vh; /* Hauteur minimale de 100% de la hauteur de la fenêtre */
 }
@@ -20,7 +20,7 @@ li, a {
 
 /* Style général pour les divs contenant les images */
 .div {
-    border: 1px solid blue; /* Bordure bleue autour de chaque div */
+    /*border: 1px solid blue;*/ /* Bordure bleue autour de chaque div */
     width: 100%; /* Largeur à 100% de la cellule de la grille */
     height: 100%; /* Hauteur à 100% de la cellule de la grille */
 }
@@ -56,9 +56,8 @@ li, a {
 }
 
 /* -----------  #div3 > #img4 -----------*/
-#div3 {
-    /* Pas besoin de définir la position, elle est gérée par la sous-grille de #groupe1 */
-}
+/* Pas besoin de définir la position, elle est gérée par la sous-grille de #groupe1 */
+
 
 /* -----------  #div4 > #img5 / #img6 -----------*/
 #div4 {
@@ -91,14 +90,12 @@ li, a {
 }
 
 /* -----------  #div6 > #img11 -----------*/
-#div6 {
-    /* Pas besoin de définir la position, elle est gérée par la sous-grille de #sousgroupe2 */
-}
+/* Pas besoin de définir la position, elle est gérée par la sous-grille de #sousgroupe2 */
+
 
 /* -----------  #div7 > #img12 -----------*/
-#div7 {
-    /* Occupe automatiquement la deuxième ligne de #groupe2 */
-}
+/* Occupe automatiquement la deuxième ligne de #groupe2 */
+
 
 /* -------------- Images spécifiques ------------*/
 /* Définition des images avec leurs URL respectives */
