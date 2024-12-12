@@ -10,12 +10,38 @@
     text-align: center;
     justify-content: center;
 }
-li, a {
+/**************** lien bas page retour à l'accueil ****************/
+/* Style des liens */
+a {
     text-decoration: none;
+    /* Supprime le soulignement des liens */
     font-size: 20px;
+    /* Taille de police pour les liens */
     margin-bottom: 20px;
-    color: cadetblue;
+    /* Marge inférieure pour espacer les éléments */
     font-weight: 600;
+    /* Épaisseur de la police pour les liens */
+    margin-top: 10px;
+    height: 5%;
+}
+
+#index {
+    display: flex;
+    /* Utilisation de Flexbox pour la mise en page */
+    width: 100%;
+    /* Hauteur du conteneur à 100% de la fenêtre */
+    justify-content: center;
+    /* Centrage des éléments horizontalement */
+}
+
+.index {
+    text-transform: capitalize;
+    border: 1px solid cadetblue;
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+    background-color: cadetblue;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /* .image {
     border: 1px solid blue;
