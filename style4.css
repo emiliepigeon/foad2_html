@@ -1,0 +1,151 @@
+/* -------------- Style général du pêle-mêle d'images ------------*/
+.container {
+    display: flex;
+    /* Utilisation de Flexbox pour la mise en page */
+    width: 100%;
+    /* Largeur du conteneur à 100% */
+    height: 100vh;
+    /* Espacement entre les éléments enfants */
+    justify-content: center;
+
+}
+
+/* Style des liens et des éléments de liste */
+li, a {
+    text-decoration: none;
+    /* Supprime le soulignement des liens */
+    font-size: 20px;
+    /* Taille de police pour les liens */
+    margin-bottom: 20px;
+    /* Marge inférieure pour espacer les éléments */
+    color: cadetblue;
+    /* Couleur du texte des liens */
+    font-weight: 600;
+    /* Épaisseur de la police pour les liens */
+}
+/*****************************GRILLE VERTICALE IMAGES *******************/
+
+/* -------------- Styles des divisions principales ------------*/
+/* Chaque groupe d'images est un conteneur flexible qui s'étire et se rétrécit */
+#div1, #groupe1, #groupe2 {
+    display: flex;
+    /* Utilisation de Flexbox pour chaque groupe */
+    flex-direction: row;
+    /* Orientation verticale des enfants */
+    flex: 1 1 0;
+    /* Permet à chaque groupe de croître et de rétrécir avec une base de 0 */
+}
+
+/* -------------- Style général des images ------------*/
+/* Classe commune pour toutes les images pour appliquer un style uniforme */
+.image {
+    flex: 1;
+    /* Chaque image occupe l'espace disponible dans son conteneur */
+    background-repeat: no-repeat;
+    /* Empêche la répétition de l'image de fond */
+    background-size: cover;
+    /* L'image couvre entièrement le conteneur sans déformation */
+    background-position: center;
+    /* Centre l'image dans le conteneur */
+}
+
+/* -------------- Styles des sous-divisions ------------*/
+/* Conteneurs pour les images dans chaque groupe avec espacement entre elles */
+#div2, #div4 {
+    display: flex;
+
+    /* Espacement entre les images dans ces conteneurs */
+    flex: 2;
+    /* Permet à ces groupes d'occuper l'espace disponible */
+}
+
+#div3 {
+    display: flex;
+    /* Utilisation de Flexbox pour aligner les images horizontalement */
+    flex: 1;
+    /* Ce groupe est deux fois plus grand que les autres groupes */
+}
+
+#sousgroupe2 {
+    display: flex;
+    /* Utilisation de Flexbox pour aligner les images horizontalement dans ce sous-groupe */
+
+    flex: 1;
+    /* Ce sous-groupe est trois fois plus grand que les autres groupes similaires */
+}
+
+#div5 {
+    display: flex;
+    /* Utilisation de Flexbox pour ce groupe d'images verticales */
+    flex-direction: row;
+
+    /* Espacement entre les images verticales dans ce groupe */
+    flex: 1;
+    /* Permet à ce groupe d'occuper l'espace disponible */
+}
+
+#div6 {
+    display: flex;
+    /* Utilisation de Flexbox pour ce groupe d'images horizontales */
+    flex: 1;
+    /* Permet à ce groupe d'occuper l'espace disponible */
+}
+
+#div7 {
+    display: flex;
+    /* Utilisation de Flexbox pour ce groupe d'images horizontales en bas */
+    flex: 1;
+    /* Permet à ce groupe d'occuper l'espace disponible */
+}
+
+/* -------------- Images spécifiques ------------*/
+/* Définition des images avec leurs URL respectives */
+
+/* Grande image verticale en haut à gauche du conteneur principal */
+#img1 {
+    background-image: url(https://fastly.picsum.photos/id/82/1500/997.jpg?hmac=VcdCqu9YiLpbCtr8YowUCSUD3-245TGekiXmtiMXotw);
+}
+
+#img2 {
+    background-image: url(https://fastly.picsum.photos/id/89/4608/2592.jpg?hmac=G9E4z5RMJgMUjgTzeR4CFlORjvogsGtqFQozIRqugBk);
+}
+
+#img3 {
+    background-image: url(https://fastly.picsum.photos/id/90/3000/1992.jpg?hmac=v_xO0GFiGn3zpcKzWIsZ3WoSoxJuAEXukrYJUdo2S6g);
+}
+
+#img4 {
+    background-image: url(https://fastly.picsum.photos/id/98/3264/2176.jpg?hmac=yRaOwMpmio9mwf43lbPEYI_5-WiPWoghJZyOKldQ43U);
+}
+
+#img5 {
+    background-image: url(https://fastly.picsum.photos/id/159/5000/2460.jpg?hmac=h12oeFVhY4-vOrALaICJ4k4dqemWn1lvaMN8yvnIU1w);
+}
+
+#img6 {
+    background-image: url(https://fastly.picsum.photos/id/189/2048/1536.jpg?hmac=R5GGFRgevRAOGu_pBXx0u2hhkhT30ICuSMIAisvauIo);
+}
+
+#img7 {
+    background-image: url(https://fastly.picsum.photos/id/202/2392/1260.jpg?hmac=zMn-DoKWGhgfhSmd4gA6ujHLqm36v0uIyJ0zz8EJ2UI);
+}
+
+#img8 {
+    background-image: url(https://fastly.picsum.photos/id/217/4000/2590.jpg?hmac=FqwQ5H36hiVE2F-FZhkN9kF6TMvUksIb7HGzMn0JRq4);
+}
+
+#img9 {
+    background-image: url(https://fastly.picsum.photos/id/222/1800/977.jpg?hmac=pd-vkWA544ktuiSTDnx0Btezs9lMx99cvCU4KVzFBmI);
+}
+
+#img10 {
+    background-image: url(https://fastly.picsum.photos/id/277/5000/3333.jpg?hmac=MMop5h2SxxGwjWrUDwakekxLvHNUOG_d9wRUYgvINhU);
+}
+
+#img11 {
+    background-image: url(https://fastly.picsum.photos/id/118/1500/1000.jpg?hmac=jumRsHTbfg0frrVd5Xw1187nwNcZCqJbqrdlXpPAIjw);
+}
+
+#img12 {
+    background-image: url(https://fastly.picsum.photos/id/106/2592/1728.jpg?hmac=E1-3Hac5ffuCVwYwexdHImxbMFRsv83exZ2EhlYxkgY);
+}
