@@ -60,3 +60,64 @@ Ressources
         W3Schools - HTML
         W3Schools - CSS
         MDN Web Docs - Flexbox
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+SCRIPT JS pour le formulaire
+
+Ce script fait les choses suivantes :
+
+    Il attend que le DOM soit chargé avant d'exécuter le code.
+    Il récupère les références aux formulaires de connexion et de contact.
+    Il définit des fonctions de validation pour chaque formulaire.
+    Il ajoute des écouteurs d'événements sur les formulaires pour intercepter leur soumission.
+    Lors de la soumission, il vérifie les champs et affiche des alertes si les données ne sont pas valides.
+    Si les données sont valides, il affiche les informations dans la console (vous pouvez remplacer cela par un envoi au serveur).
+
+N'oubliez pas d'inclure ce script dans votre fichier HTML, par exemple juste avant la fermeture de la balise </body> :
+
+xml
+<script src="script.js"></script>
+</body>
+</html>
+
+Formulaire Flex
+Description
+Ce projet contient deux formulaires : un formulaire de connexion et un formulaire de contact. Il est conçu pour être simple et facile à comprendre pour les débutants en HTML, CSS et JavaScript.
+Contenu du projet
+
+    HTML : Structure de base des formulaires.
+    CSS : Styles pour rendre les formulaires attrayants (dans styles.css).
+    JavaScript : Validation des formulaires en utilisant du JavaScript pur (dans script.js).
+
+Fonctionnalités
+
+    Formulaire de connexion :
+        Champ pour le login (doit contenir au moins 8 caractères).
+        Champ pour le mot de passe.
+        Bouton de soumission.
+    Formulaire de contact :
+        Champs pour le nom et le prénom.
+        Champ pour l'adresse email (doit être valide).
+        Menu déroulant pour sélectionner un sujet.
+        Zone de texte pour le message (doit contenir au moins 10 caractères).
+        Bouton d'envoi.
+
+Installation
+
+    Clonez ou téléchargez ce dépôt sur votre ordinateur.
+    Ouvrez le fichier index.html dans votre navigateur web.
+
+Utilisation
+
+    Remplissez les champs des formulaires.
+    Cliquez sur "Connexion" pour le formulaire de connexion ou "Envoyer le message" pour le formulaire de contact.
+    Des alertes s'afficheront si les données saisies ne sont pas valides.
+
+Technologies utilisées
+
+    HTML
+    CSS
+    JavaScript (vanilla)
+
+Aide
+Si vous avez des questions ou des problèmes, n'hésitez pas à me contacter. Vous pouvez également consulter des ressources en ligne sur HTML, CSS et JavaScript pour en apprendre davantage. N'hésitez pas à personnaliser ce README selon vos besoins ou à ajouter d'autres sections si nécessaire !
