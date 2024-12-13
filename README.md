@@ -5,6 +5,8 @@ FOAD 06/12/2024
 NB:pour mon filet => pensr à regarder doc pseudo-class pour lui donner une taille en largeur
 https://developer.mozilla.org/en-US/docs/Web/CSS/::after
 
+https://htmlcheatsheet.com/
+
 README pour les Exercices de Formulaire avec Flexbox
 Introduction
 Ce projet contient deux exercices pour apprendre à utiliser Flexbox pour créer des formulaires bien structurés et esthétiques. Chaque exercice est conçu pour vous aider à comprendre et à maîtriser les techniques de positionnement et de mise en forme des éléments de formulaire using Flexbox.
