@@ -29,8 +29,8 @@
                     <!-- Groupe pour le champ de mot de passe -->
                     <div class="form-group">
                         <label for="pass">Mot de passe:</label>
-                        <!-- Champ de saisie pour le mot de passe (type="password" cache les caractères) -->
-                        <input type="password" id="pass" name="password" placeholder="••••••••" />
+                        <!-- Champ de saisie pour le mot de passe (type="password" cache les caractères maispas trop sécurisé peu se bidouler le faire aussi côté serveur) -->
+                        <input type="password" id="pass" name="pass" placeholder="••••••••" />
                     </div>
                     <!-- Groupe pour le bouton de soumission -->
                     <div class="button">
@@ -44,19 +44,24 @@
         <h1>Formulaire de contact</h1>
         <!--EXERCICE 2 : Formulaire de contact-->
         <section id="contact">
-            <form action="">
+            <form action="" method="" id="">
                 <div class="container">
                     <!-- Première ligne du formulaire : Nom et Prénom -->
                     <div class="form-row">
                         <!-- Groupe pour le champ Nom -->
                         <div class="form-group">
                             <label for="lastname">Nom:</label>
-                            <input type="text" id="lastname" name="last_name" placeholder="Entrer votre nom" />
+                            <!-- label > for =valeur = id de l'input-->
+                            <!-- sécurité côté client : champ obligatoire =require >existe plusieurs attribut type -->
+                            <!-- <input require type="text" id="lastname" name="last_name" placeholder="Entrer votre nom" /> -->
+                            <!-- value = valeur par défaut / name = très important => nom input / form sousmis récup valeur et name = clé = un tableau
+                                disable = enpçeche d'interagir = affiche info mais pas modifiable mais pas sécure-->
+                            <input type="text" id="lastname" name="lastname" value="" placeholder="Entrer votre nom" />
                         </div>
                         <!-- Groupe pour le champ Prénom -->
                         <div class="form-group">
                             <label for="firstname">Prénom:</label>
-                            <input type="text" id="firstname" name="first_name" placeholder="Entrer votre prénom" />
+                            <input type="text" id="firstname" name="firstname" placeholder="Entrer votre prénom" />
                         </div>
                     </div>
                     <!-- Deuxième ligne du formulaire : Email et Sujet -->
