@@ -24,18 +24,18 @@
                         <!-- Label associé à l'input login -->
                         <label for="login">Login:</label>
                         <!-- Champ de saisie pour le login -->
-                        <input type="text" id="login" name="login" placeholder="Entrez votre login" minlength="8" required  />
+                        <input required type="text" id="login" name="login" placeholder="Entrez votre login" minlength="8" required  />
                     </div>
                     <!-- Groupe pour le champ de mot de passe -->
                     <div class="form-group">
                         <label for="pass">Mot de passe:</label>
                         <!-- Champ de saisie pour le mot de passe (type="password" cache les caractères maispas trop sécurisé peu se bidouler le faire aussi côté serveur) -->
-                        <input type="password" id="pass" name="pass" placeholder="••••••••" />
+                        <input required type="password" id="pass" name="pass" placeholder="••••••••" />
                     </div>
                     <!-- Groupe pour le bouton de soumission -->
                     <div class="button">
                         <!-- Bouton pour soumettre le formulaire -->
-                        <button type="submit">Connexion</button>
+                        <input required type="submit" name="btn_contact" value="Envoyer"></input>
                     </div>
                 </div>
             </form>
@@ -53,15 +53,15 @@
                             <label for="lastname">Nom:</label>
                             <!-- label > for =valeur = id de l'input-->
                             <!-- sécurité côté client : champ obligatoire =require >existe plusieurs attribut type -->
-                            <!-- <input require type="text" id="lastname" name="last_name" placeholder="Entrer votre nom" /> -->
+                            <!-- <input required type="text" id="lastname" name="last_name" placeholder="Entrer votre nom" /> -->
                             <!-- value = valeur par défaut / name = très important => nom input / form sousmis récup valeur et name = clé = un tableau
                                 disable = enpçeche d'interagir = affiche info mais pas modifiable mais pas sécure-->
-                            <input type="text" id="lastname" name="lastname" value="" placeholder="Entrer votre nom" />
+                            <input required type="text" id="lastname" name="lastname" value="" placeholder="Entrer votre nom" />
                         </div>
                         <!-- Groupe pour le champ Prénom -->
                         <div class="form-group">
                             <label for="firstname">Prénom:</label>
-                            <input type="text" id="firstname" name="firstname" placeholder="Entrer votre prénom" />
+                            <input required type="text" id="firstname" name="firstname" placeholder="Entrer votre prénom" />
                         </div>
                     </div>
                     <!-- Deuxième ligne du formulaire : Email et Sujet -->
@@ -69,17 +69,19 @@
                         <!-- Groupe pour le champ Email -->
                         <div class="form-group">
                             <label for="mail">Adresse email:</label>
-                            <input type="email" id="mail" name="email" placeholder="Entrer votre adresse mail" />
+                            <input required type="email" id="mail" name="mail" placeholder="Entrer votre adresse mail" />
                         </div>
                         <!-- Groupe pour le menu déroulant Sujet -->
                         <div class="form-group">
                             <label for="menu-choix">Votre sujet:</label>
                             <!-- Menu déroulant avec options -->
-                            <select name="subject" id="menu-choix">
+                            <!-- <select name="menu-choix[]" id="menu-choix"> [] pour stocker choix dans un tableau -->
+                            <select name="menu-choix" id="menu-choix">
                                 <option value="">----</option>
-                                <option value="sub1">Demande 1</option>
-                                <option value="sub2">Demande 2</option>
-                                <option value="sub3">Demande 3</option>
+                                <!-- ICI value très importante pour la soumission du form = valeur du choix -->
+                                <option value="sujet1">Demande 1</option>
+                                <option value="sujet2">Demande 2</option>
+                                <option value="sujet3">Demande 3</option>
                             </select>
                         </div>
                     </div>
@@ -92,7 +94,9 @@
                     <!-- Conteneur pour le bouton d'envoi -->
                     <div class="button">
                         <!-- Bouton pour envoyer le formulaire -->
-                        <button type="submit">Envoyer le message</button>
+                        <input required type="submit" name="btn_contact" value="Envoyer"></input>
+                        <!-- input plus logique car nous sommes dans un formulaire-->
+                        <!-- <button required type="submit" value="send">Envoyer le message</button> -->
                     </div>
                 </div>
             </form>

@@ -52,7 +52,7 @@ textarea {
 }
 
 input[type="submit"],
-button[type="submit"] {
+input[type="submit"] {
     padding: 10px 20px;
     background-color: grey; /* Couleur de fond pour les boutons */
     color: white; /* Couleur du texte */
